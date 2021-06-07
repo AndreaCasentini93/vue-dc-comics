@@ -2,14 +2,18 @@
     <header>
         <div class="container">
             <nav>
+                <!-- LOGO -->
                 <a href="#">
                     <img src="../assets/img/dc-logo.png" alt="Logo">
                 </a>
+                <!-- /LOGO -->
+                <!-- LINKS -->
                 <ul>
                     <li v-for="link, index in links" :key="index">
                         <a :href="link.url" :class="{ active: link.current }">{{ link.text }}</a>
                     </li>
                 </ul>
+                <!-- /LINKS -->
             </nav>
         </div>
     </header>
@@ -97,14 +101,14 @@ export default {
                         display: flex;
 
                         a {
-                            padding: 55px 0;
+                            padding: 65px 0;
                             border-bottom: 4px solid #ffffff00;
                             margin: 0 18px;
                             text-transform: uppercase;
                             text-decoration: none;
                             font-size: 13px;
                             font-weight: 700;
-                            color: $header-nav-color;
+                            color: $dark-grey;
 
                             &:hover,
                             &.active {
