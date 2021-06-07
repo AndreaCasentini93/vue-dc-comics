@@ -21,31 +21,31 @@ export default {
             links: [
                 {
                     text: 'Digital Comics',
-                    image: '../assets/img/buy-comics-digital-comics.png',
+                    image: require('../assets/img/buy-comics-digital-comics.png'),
                     alt: 'Image Digital Comics',
                     url: '#'
                 },
                 {
                     text: 'DC Merchandise',
-                    image: '../assets/img/buy-comics-digital-comics.png',
+                    image: require('../assets/img/buy-comics-merchandise.png'),
                     alt: 'Image DC Merchandise',
                     url: '#'
                 },
                 {
                     text: 'Subscription',
-                    image: '../assets/img/buy-comics-digital-comics.png',
+                    image: require('../assets/img/buy-comics-subscriptions.png'),
                     alt: 'Image Subscription',
                     url: '#'
                 },
                 {
                     text: 'Comic Shop Locator',
-                    image: '../assets/img/buy-comics-digital-comics.png',
+                    image: require('../assets/img/buy-comics-shop-locator.png'),
                     alt: 'Image Comic Shop Locator',
                     url: '#'
                 },
                 {
                     text: 'DC Power Visa',
-                    image: '../assets/img/buy-comics-digital-comics.png',
+                    image: require('../assets/img/buy-dc-power-visa.svg'),
                     alt: 'Image DC Power Visa',
                     url: '#'
                 }
@@ -55,7 +55,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scope>
+<style lang="scss" scoped>
     @import '../style/variables.scss';
 
     section {
@@ -70,6 +70,8 @@ export default {
                 padding: 30px;
 
                 li {
+                    margin: 0 30px;
+
                     a {
                         display: flex;
                         align-items: center;
@@ -77,13 +79,15 @@ export default {
                         color: $white;
 
                         img {
-                            width: 45px;
-                            margin-right: 15px;
+                            max-width: 50px;
+                            max-height: 50px;
+                            margin-right: 10px;
                         }
 
                         div {
                             text-transform: uppercase;
-                            font-size: 14px;
+                            font-size: 13px;
+                            white-space: nowrap;
                         }
                     }
                 }
