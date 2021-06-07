@@ -64,13 +64,13 @@ export default {
         .container {
             ul {
                 display: flex;
-                justify-content: space-around;
+                justify-content: center;
                 align-items: center;
                 list-style: none;
-                padding: 30px;
+                padding: 30px 0;
 
                 li {
-                    margin: 0 30px;
+                    margin-right: 60px;
 
                     a {
                         display: flex;
@@ -79,8 +79,8 @@ export default {
                         color: $white;
 
                         img {
-                            max-width: 50px;
-                            max-height: 50px;
+                            max-width: 45px;
+                            max-height: 45px;
                             margin-right: 10px;
                         }
 

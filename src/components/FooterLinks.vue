@@ -32,7 +32,7 @@ export default {
             display: flex;
             position: relative;
             min-height: 300px;
-            padding: 30px;
+            padding: 30px 0;
             overflow: hidden;
 
             div {
@@ -43,7 +43,7 @@ export default {
                 h4 {
                     margin-bottom: 15px;
                     text-transform: uppercase;
-                    font-size: 15px;
+                    font-size: 16px;
                     color: $white;
                 }
 
@@ -53,7 +53,7 @@ export default {
                     li {
                         a {
                             text-decoration: none;
-                            font-size: 13px;
+                            font-size: 14px;
                             color: $light-grey;
                             transition: color .3s;
 
