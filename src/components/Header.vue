@@ -85,7 +85,7 @@ export default {
     @import '../style/variables';
 
     header {
-        background-color: #FFFFFF;
+        background-color: $white;
 
         .container {
             nav {
@@ -109,6 +109,7 @@ export default {
                             font-size: 13px;
                             font-weight: 700;
                             color: $dark-grey;
+                            transition: color .3s, border .3s;
 
                             &:hover,
                             &.active {
