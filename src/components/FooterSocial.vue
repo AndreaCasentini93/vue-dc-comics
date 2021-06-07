@@ -9,7 +9,9 @@
                 <h4>Follow Us</h4>
                 <ul>
                     <li v-for="linkSocialNetwork, index in linksSocialNetwork" :key="index">
-                        <a href="linkSocialNetwork.url"><i :class="linkSocialNetwork.class"></i></a>
+                        <a href="linkSocialNetwork.url">
+                            <img :src="linkSocialNetwork.image" :alt="linkSocialNetwork.alt">
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -25,24 +27,29 @@ export default {
         return {
             linksSocialNetwork: [
                 {
-                    class: 'fab fa-facebook-f',
+                    image: require('../assets/img/footer-facebook.png'),
                     url: '#',
+                    alt: 'Facebook'
                 },
                 {
-                    class: 'fab fa-twitter',
+                    image: require('../assets/img/footer-twitter.png'),
                     url: '#',
+                    alt: 'Twitter'
                 },
                 {
-                    class: 'fab fa-youtube',
+                    image: require('../assets/img/footer-youtube.png'),
                     url: '#',
+                    alt: 'Youtube'
                 },
                 {
-                    class: 'fab fa-pinterest-p',
+                    image: require('../assets/img/footer-pinterest.png'),
                     url: '#',
+                    alt: 'Pintarest'
                 },
                 {
-                    class: 'fas fa-map-marker-alt',
+                    image: require('../assets/img/footer-periscope.png'),
                     url: '#',
+                    alt: 'Periscope'
                 }
             ]
         }
@@ -98,17 +105,8 @@ export default {
                             margin-right: 15px;
                         }
 
-                        a {  
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            width: 40px;
-                            height: 40px;  
-                            border-radius: 50%;                       
+                        a {                          
                             text-decoration: unset;
-                            font-size: 16px;
-                            color: $dark-grey;
-                            background-color: $light-grey;
                             transition: opacity .3s;
 
                             &:hover {
