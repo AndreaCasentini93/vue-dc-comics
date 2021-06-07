@@ -96,8 +96,7 @@ export default {
                 }
 
                 ul {
-                    display: flex;
-                    list-style: none;
+                    @include links-list (row);
 
                     li {
                         &:not(:last-child) {
@@ -105,7 +104,6 @@ export default {
                         }
 
                         a {                          
-                            text-decoration: unset;
                             transition: opacity .3s;
 
                             &:hover {

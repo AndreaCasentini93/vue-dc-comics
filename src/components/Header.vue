@@ -94,24 +94,22 @@ export default {
 
                 a {
                     img {
-                        max-width: 80px;
+                        max-width: 75px;
                     }
                 }
 
                 ul {
-                    display: flex;
-                    list-style: none;
+                    @include links-list (row);
 
                     li {
                         display: flex;
 
                         a {
-                            padding: 55px 0;
-                            border-bottom: 4px solid #ffffff00;
+                            padding: 50px 0;
+                            border-bottom: 5px solid #ffffff00;
                             margin: 0 18px;
                             text-transform: uppercase;
-                            text-decoration: none;
-                            font-size: 13px;
+                            font-size: 12px;
                             font-weight: 700;
                             color: $dark-grey;
                             transition: color .3s, border .3s;
@@ -119,7 +117,7 @@ export default {
                             &:hover,
                             &.active {
                                 color: $blue-dc;
-                                border-bottom: 4px solid $blue-dc;
+                                border-bottom: 5px solid $blue-dc;
                             }
                         }
                     }

@@ -189,14 +189,13 @@ export default {
                 }
 
                 ul {
-                    list-style: none;
+                    @include links-list (column);
 
                     li {
-                        margin: 8px 0;
+                        margin: 3px 0;
 
                         a {
-                            text-decoration: none;
-                            font-size: 14px;
+                            font-size: 13px;
                             color: $light-grey;
                             transition: color .3s;
 

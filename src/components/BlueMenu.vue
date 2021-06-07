@@ -65,8 +65,8 @@ export default {
         .container {
             ul {
                 @include flex-positioning (center, center);
-                list-style: none;
-                padding: 30px 0;
+                @include links-list (row);
+                padding: 55px 0;
 
                 li {
                     margin-right: 60px;
@@ -74,12 +74,11 @@ export default {
                     a {
                         display: flex;
                         align-items: center;
-                        text-decoration: none;
                         color: $white;
 
                         img {
-                            max-width: 45px;
-                            max-height: 45px;
+                            max-width: 50px;
+                            max-height: 50px;
                             margin-right: 10px;
                         }
 

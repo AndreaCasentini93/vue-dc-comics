@@ -4,3 +4,16 @@
     justify-content: $justify-content;
     align-items: $align-items;
 }
+
+// Lista di link
+@mixin links-list ($row-or-column) {
+    display: flex;
+    flex-direction: $row-or-column;
+    list-style: none;
+    
+    li {
+        a {
+            text-decoration: none;
+        }
+    }
+}
