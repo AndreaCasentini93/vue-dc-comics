@@ -93,6 +93,12 @@ export default {
                 justify-content: space-between;
                 align-items: center;
 
+                a {
+                    img {
+                        max-width: 80px;
+                    }
+                }
+
                 ul {
                     display: flex;
                     list-style: none;
@@ -101,7 +107,7 @@ export default {
                         display: flex;
 
                         a {
-                            padding: 65px 0;
+                            padding: 55px 0;
                             border-bottom: 4px solid #ffffff00;
                             margin: 0 18px;
                             text-transform: uppercase;
