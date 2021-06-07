@@ -2,10 +2,35 @@
     <section>
         <div class="container">
             <div>
-                <h4>
-                    Titolo
-                </h4>
+                <h4>DC Comics</h4>
                 <ul>
+                    <li>
+                        <a href="#">Link</a>
+                    </li>
+                    <li>
+                        <a href="#">Link</a>
+                    </li>
+                    <li>
+                        <a href="#">Link</a>
+                    </li>
+                    <li>
+                        <a href="#">Link</a>
+                    </li>
+                    <li>
+                        <a href="#">Link</a>
+                    </li>
+                    <li>
+                        <a href="#">Link</a>
+                    </li>
+                    <li>
+                        <a href="#">Link</a>
+                    </li>
+                </ul>
+                <h4>Shop</h4>
+                <ul>
+                    <li>
+                        <a href="#">Link</a>
+                    </li>
                     <li>
                         <a href="#">Link</a>
                     </li>
@@ -18,7 +43,16 @@
 
 <script>
 export default {
-    name: 'FooterLinks'
+    name: 'FooterLinks',
+    data: function() {
+        return {
+            links: [
+                {
+                    
+                },
+            ]
+        }
+    }
 }
 </script>
 
@@ -27,11 +61,12 @@ export default {
 
     section {
         background: url("../assets/img/footer-bg.jpg");
+        background-size: cover;
 
         .container {
             display: flex;
             position: relative;
-            min-height: 300px;
+            min-height: 320px;
             padding: 30px 0;
             overflow: hidden;
 
@@ -41,7 +76,8 @@ export default {
                 margin-right: 50px;
 
                 h4 {
-                    margin-bottom: 15px;
+                    margin-top: 12px;
+                    margin-bottom: 12px;
                     text-transform: uppercase;
                     font-size: 16px;
                     color: $white;
@@ -51,6 +87,8 @@ export default {
                     list-style: none;
 
                     li {
+                        margin: 8px 0;
+
                         a {
                             text-decoration: none;
                             font-size: 14px;
@@ -68,9 +106,9 @@ export default {
                 position: absolute;
                 top: 0;
                 right: 0;
-                width: 400px;
+                width: 580px;
                 object-fit: cover;
-                object-position: 0 -50px;
+                object-position: 0 -95px;
             }
         }
     }
