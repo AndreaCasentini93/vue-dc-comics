@@ -20,39 +20,33 @@ export default {
         return {
             links: [
                 {
-                    text: 'Digital comics',
+                    text: 'Digital Comics',
                     image: '../assets/img/buy-comics-digital-comics.png',
                     alt: 'Image Digital Comics',
                     url: '#'
                 },
                 {
-                    text: 'Digital comics',
+                    text: 'DC Merchandise',
                     image: '../assets/img/buy-comics-digital-comics.png',
-                    alt: 'Image Digital Comics',
+                    alt: 'Image DC Merchandise',
                     url: '#'
                 },
                 {
-                    text: 'Digital comics',
+                    text: 'Subscription',
                     image: '../assets/img/buy-comics-digital-comics.png',
-                    alt: 'Image Digital Comics',
+                    alt: 'Image Subscription',
                     url: '#'
                 },
                 {
-                    text: 'Digital comics',
+                    text: 'Comic Shop Locator',
                     image: '../assets/img/buy-comics-digital-comics.png',
-                    alt: 'Image Digital Comics',
+                    alt: 'Image Comic Shop Locator',
                     url: '#'
                 },
                 {
-                    text: 'Digital comics',
+                    text: 'DC Power Visa',
                     image: '../assets/img/buy-comics-digital-comics.png',
-                    alt: 'Image Digital Comics',
-                    url: '#'
-                },
-                {
-                    text: 'Digital comics',
-                    image: '../assets/img/buy-comics-digital-comics.png',
-                    alt: 'Image Digital Comics',
+                    alt: 'Image DC Power Visa',
                     url: '#'
                 }
             ]
