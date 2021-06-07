@@ -57,15 +57,14 @@ export default {
 
 <style lang="scss" scoped>
     @import '../style/variables.scss';
+    @import '../style/mixins';
 
     section {
         background-color: $blue-dc;
 
         .container {
             ul {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flex-positioning (center, center);
                 list-style: none;
                 padding: 30px 0;
 

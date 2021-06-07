@@ -1,0 +1,6 @@
+// Posizionamento con Flex
+@mixin flex-positioning ($justify-content, $align-items) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}

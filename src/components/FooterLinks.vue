@@ -162,6 +162,7 @@ export default {
 
 <style lang="scss" scoped>
     @import '../style/variables.scss';
+    @import '../style/mixins';
 
     section {
         background: url("../assets/img/footer-bg.jpg");

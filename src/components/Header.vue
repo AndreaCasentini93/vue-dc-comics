@@ -83,15 +83,14 @@ export default {
 
 <style lang="scss" scoped>
     @import '../style/variables';
+    @import '../style/mixins';
 
     header {
         background-color: $white;
 
         .container {
             nav {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+                @include flex-positioning (space-between, center);
 
                 a {
                     img {

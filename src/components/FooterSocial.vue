@@ -59,14 +59,13 @@ export default {
 
 <style lang="scss" scoped>
     @import '../style/variables.scss';
+    @import '../style/mixins';
 
     section {
         background-color: $dark-grey;
 
         .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            @include flex-positioning (space-between, center);
             padding: 25px 0;
 
             button {
