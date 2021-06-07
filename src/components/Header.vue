@@ -7,7 +7,7 @@
                 </a>
                 <ul>
                     <li v-for="link, index in links" :key="index">
-                        <a :href="link.url">{{ link.text }}</a>
+                        <a :href="link.url" :class="{ active: link.current }">{{ link.text }}</a>
                     </li>
                 </ul>
             </nav>
@@ -29,7 +29,7 @@ export default {
                 {
                     text: 'Comics',
                     url: '#',
-                    current: false
+                    current: true
                 },
                 {
                     text: 'Movies',
