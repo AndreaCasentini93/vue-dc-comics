@@ -64,16 +64,15 @@ export default {
 
         .container {
             ul {
-                @include flex-positioning (center, center);
-                @include links-list (row);
+                @include flex-centering;
+                @include links-list-style ('inline');
                 padding: 55px 0;
 
                 li {
                     margin-right: 60px;
 
                     a {
-                        display: flex;
-                        align-items: center;
+                        @include flex-centering('vertical');
                         color: $white;
 
                         img {

@@ -1,15 +1,39 @@
+// Clearfix
+@mixin clearfix {
+    display: table;
+    clear: both;
+    content: '';
+}
+
 // Posizionamento con Flex
 @mixin flex-positioning ($justify-content, $align-items) {
     display: flex;
     justify-content: $justify-content;
     align-items: $align-items;
 }
+@mixin flex-centering ($type: 'both') {
+    display: flex;
+
+    @if $type == 'horizontal' {
+        justify-content: center;
+    } @else if $type == 'vertical' {
+        align-items: center;
+    } @else {
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 // Lista di link
-@mixin links-list ($row-or-column) {
+@mixin links-list-style ($type: 'block') {
     display: flex;
-    flex-direction: $row-or-column;
     list-style: none;
+
+    @if $type == 'inline' {
+        flex-direction: row;
+    } @else {
+        flex-direction: column;
+    }
     
     li {
         a {

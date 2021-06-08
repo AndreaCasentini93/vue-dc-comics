@@ -99,7 +99,7 @@ export default {
                 }
 
                 ul {
-                    @include links-list (row);
+                    @include links-list-style('inline');
 
                     li {
                         display: flex;

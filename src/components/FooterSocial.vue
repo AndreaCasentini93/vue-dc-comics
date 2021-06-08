@@ -85,8 +85,7 @@ export default {
             }
 
             div {
-                display: flex;
-                align-items: center;
+                @include flex-centering ('vertical');
 
                 h4 {
                     margin-right: 30px;
@@ -96,7 +95,7 @@ export default {
                 }
 
                 ul {
-                    @include links-list (row);
+                    @include links-list-style('inline');
 
                     li {
                         &:not(:last-child) {

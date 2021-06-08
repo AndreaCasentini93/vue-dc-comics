@@ -189,7 +189,7 @@ export default {
                 }
 
                 ul {
-                    @include links-list (column);
+                    @include links-list-style;
 
                     li {
                         margin: 3px 0;
