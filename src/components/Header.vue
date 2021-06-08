@@ -9,8 +9,8 @@
                 <!-- /LOGO -->
                 <!-- LINKS -->
                 <ul>
-                    <li v-for="link, index in links" :key="index">
-                        <a :href="link.url" :class="{ active: link.current }">{{ link.text }}</a>
+                    <li v-for="link, index in links" :key="index" :class="{ active: link.current }">
+                        <a :href="link.url">{{ link.text }}</a>
                     </li>
                 </ul>
                 <!-- /LINKS -->
@@ -103,21 +103,29 @@ export default {
 
                     li {
                         display: flex;
+                        padding: 50px 0;
+                        border-bottom: 5px solid rgba($white, 0);
+                        margin: 0 18px;
+                        transition: border .3s;
+
+                        &:hover,
+                        &.active {
+                            border-bottom: 5px solid $blue-dc;
+                        }
+
+                        &.active a {
+                            color: $blue-dc;
+                        }
 
                         a {
-                            padding: 50px 0;
-                            border-bottom: 5px solid rgba($white, 0);
-                            margin: 0 18px;
                             text-transform: uppercase;
-                            font-size: 12px;
+                            font-size: 13px;
                             font-weight: 700;
                             color: $dark-grey;
-                            transition: color .3s, border .3s;
+                            transition: color .3s;
 
-                            &:hover,
-                            &.active {
+                            &:hover {
                                 color: $blue-dc;
-                                border-bottom: 5px solid $blue-dc;
                             }
                         }
                     }
