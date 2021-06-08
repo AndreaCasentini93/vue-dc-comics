@@ -2,6 +2,7 @@
     <section>
         <div class="container">
             <Cards v-for="volume, index in volumes" :key="index" :card="volume"/>
+            <button type="input">Load More</button>
         </div>
     </section>
 </template>
@@ -104,9 +105,27 @@ export default {
         background-color: darken($dark-grey, 8%);
 
         .container {
-            padding: 25px 0 10px 0;
+            padding: 25px 0 20px 0;
             @include flex-centering ('horizontal');
             flex-wrap: wrap;
+            align-content: flex-start;
+
+            button {
+                padding: 10px 50px;
+                border: 2px solid $blue-dc;
+                margin-top: 20px;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 700;
+                color: $white;
+                background-color: $blue-dc;
+                cursor: pointer;
+                transition: background-color .3s;
+
+                &:hover {
+                    background-color: rgba($blue-dc, 0);
+                }
+            }
         }
     }
 </style>

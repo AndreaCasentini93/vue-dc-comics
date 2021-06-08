@@ -1,8 +1,8 @@
 <template>
-    <div>
+    <a :href="card.thumb">
         <img :src="card.thumb" :alt="card.series">
         <h6>{{ card.series }}</h6>
-    </div>
+    </a>
 </template>
 
 <script>
@@ -18,9 +18,17 @@ export default {
     @import '../style/variables.scss';
     @import '../style/mixins';
 
-    div {
+    a {
         width: calc((100% / 6) - 30px);
-        margin: 15px;
+        margin: 20px 15px;
+        text-decoration: none;
+
+        &:hover > img {
+            opacity: 0.5;
+        }
+        &:hover > h6 {
+            color: $blue-dc;
+        }
 
         img {
             display: block;
@@ -29,14 +37,15 @@ export default {
             margin-bottom: 20px;
             object-fit: cover;
             object-position: top;
+            transition: opacity .3s;
         }
 
         h6 {
-            margin-bottom: 15px;
             text-transform: uppercase;
             font-weight: 400;
             font-size: 12px;
             color: $white;
+            transition: color .3s;
         }
     }
 </style>
