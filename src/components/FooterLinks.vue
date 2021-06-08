@@ -37,7 +37,7 @@
                 </ul>
             </div>
             <!-- /COLUMN 1 -->
-            <img src="../assets/img/dc-logo-bg.png" alt="">
+            <img src="../assets/img/dc-logo-bg.png" alt="Image Logo Big">
         </div>
     </section>
 </template>
