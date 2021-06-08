@@ -9,7 +9,7 @@
                 <h4>Follow Us</h4>
                 <ul>
                     <li v-for="linkSocialNetwork, index in linksSocialNetwork" :key="index">
-                        <a href="linkSocialNetwork.url">
+                        <a :href="linkSocialNetwork.url">
                             <img :src="linkSocialNetwork.image" :alt="linkSocialNetwork.alt">
                         </a>
                     </li>
