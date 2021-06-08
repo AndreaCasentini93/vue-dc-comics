@@ -41,3 +41,9 @@
         }
     }
 }
+
+// Background-image
+@mixin background-properties ($size, $position) {
+    background-size: $size;
+    background-position: $position;
+}

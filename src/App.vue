@@ -6,9 +6,8 @@
 
     <!-- MAIN -->
     <main>
-      <div class="container debug">
-        Content goes here
-      </div>
+      <Jumbotron />
+      <DcVolumes />
       <BlueMenu />
     </main>
     <!-- /MAIN -->
@@ -24,6 +23,8 @@
 
 <script>
 import Header from './components/Header.vue';
+import Jumbotron from './components/Jumbotron.vue';
+import DcVolumes from './components/DcVolumes.vue';
 import BlueMenu from './components/BlueMenu.vue';
 import FooterLinks from './components/FooterLinks.vue';
 import FooterSocial from './components/FooterSocial.vue';
@@ -32,6 +33,8 @@ export default {
   name: 'App',
   components: {
     Header,
+    Jumbotron,
+    DcVolumes,
     BlueMenu,
     FooterLinks,
     FooterSocial
@@ -41,16 +44,4 @@ export default {
 
 <style lang="scss">
   @import './style/general.scss';
-
-  // Debug
-  main {
-    background-color: #000000;
-    .container.debug {
-      padding: 50px 0;
-      font-size: 25px;
-      font-weight: 700;
-      color: #FFFFFF;
-    }
-  }
-  // /Debug
 </style>
