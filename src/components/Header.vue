@@ -106,7 +106,7 @@ export default {
 
                         a {
                             padding: 50px 0;
-                            border-bottom: 5px solid rgba($white, 0.5);
+                            border-bottom: 5px solid rgba($white, 0);
                             margin: 0 18px;
                             text-transform: uppercase;
                             font-size: 12px;
